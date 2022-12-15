@@ -46,10 +46,12 @@ const addNewNote = (text = '') => {
 
     delButton.addEventListener('click', () => {
         note.remove();
-        updateLSData();
+        updateLocalStorageData();
     })
 
     //toggle using edit button
+    textArea.value = text;
+    mainDiv.innerHtml = text;
 
 
     editButton.addEventListener('click', () => {
@@ -61,7 +63,7 @@ const addNewNote = (text = '') => {
         const value = event.target.value;
         mainDiv.innerHTML = value;
 
-        updateLSData();
+        updateLocalStorageData();
 
     })
     

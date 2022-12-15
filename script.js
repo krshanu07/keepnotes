@@ -1,6 +1,6 @@
 const addButton = document.querySelector('#add');
 
-const updateLSData = () => {
+const updateLocalStorgageData = () => {
     const textAreaData = document.querySelectorAll('textarea');
     const notes = [];
     //console.log(textAreaData)
